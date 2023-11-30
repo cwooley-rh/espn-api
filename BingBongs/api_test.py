@@ -62,16 +62,19 @@ def main():
     activity = league.recent_activity()
     activity_len = len(activity)
     json_activity = [serialize_activity(act) for act in activity]
-
+    sorted_activity = sorted(json_activity, key=lambda x: x["team"])
     # activity_json = json.dumps(activity, indent=2)
     # print(f"Recent Activity: {activity_json}")
     # print(activity.type())
-    file_path = "recent_activity.json"
+    file_path = "recent_activity_sorted.json"
     with open(file_path, "w") as file:
-    # Convert the list of dictionaries to a JSON-formatted string and write it to the file
-        json.dump(json_activity, file, indent=2)
+        json.dump(sorted_activity, file, indent=2)
 
-    print(f"Activity has been written to '{file_path}'")
+    print(f"Sorted activity has been written to '{file_path}'")
+
+    # Iterate through the sorted activity and send Venmo requests
+    # for entry in sorted_activity:
+    #     team_name = entry["team"]
 
 if __name__ == "__main__":
     main()
