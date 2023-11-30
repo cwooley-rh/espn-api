@@ -1,6 +1,7 @@
 from espn_api.football import League
 from datetime import datetime
 import configparser
+import json
 import os
 
 # ESPN Fantasy auth, abstract before pushing
@@ -19,6 +20,18 @@ def getLeagueYear(month, year):
         return year
     else:
         return year - 1
+    
+def serialize_activity(activity):
+    return {
+        "team": activity.actions[0][0].team_name,
+        "action": activity.actions[0][1],
+        "player": {
+            "name": activity.actions[0][2].name,
+            "position": activity.actions[0][2].position,
+            # Include other player attributes as needed
+        }
+    }
+
 
 def main():
     # Read authentication credentials
@@ -46,5 +59,19 @@ def main():
     # print(f"League Year: {league_year}")
     # print(f"Number of Teams: {len(league.teams)}")
     
+    activity = league.recent_activity()
+    activity_len = len(activity)
+    json_activity = [serialize_activity(act) for act in activity]
+
+    # activity_json = json.dumps(activity, indent=2)
+    # print(f"Recent Activity: {activity_json}")
+    # print(activity.type())
+    file_path = "recent_activity.json"
+    with open(file_path, "w") as file:
+    # Convert the list of dictionaries to a JSON-formatted string and write it to the file
+        json.dump(json_activity, file, indent=2)
+
+    print(f"Activity has been written to '{file_path}'")
+
 if __name__ == "__main__":
     main()

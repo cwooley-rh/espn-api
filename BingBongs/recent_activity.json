@@ -1,0 +1,202 @@
+[
+  {
+    "team": "SCHLOPS",
+    "action": "FA ADDED",
+    "player": {
+      "name": "Rico Dowdle",
+      "position": "RB"
+    }
+  },
+  {
+    "team": "SCHLOPS",
+    "action": "DROPPED",
+    "player": {
+      "name": "Miles Sanders",
+      "position": "RB"
+    }
+  },
+  {
+    "team": "SCHLOPS",
+    "action": "FA ADDED",
+    "player": {
+      "name": "Miles Sanders",
+      "position": "RB"
+    }
+  },
+  {
+    "team": "CeeDeez Nutz",
+    "action": "DROPPED",
+    "player": {
+      "name": "Kareem Hunt",
+      "position": "RB"
+    }
+  },
+  {
+    "team": "Get Rich or Die Brian",
+    "action": "DROPPED",
+    "player": {
+      "name": "Jonnu Smith",
+      "position": "TE"
+    }
+  },
+  {
+    "team": "Vato Hitch",
+    "action": "DROPPED",
+    "player": {
+      "name": "Joe Burrow",
+      "position": "QB"
+    }
+  },
+  {
+    "team": "Biden Death Squad",
+    "action": "FA ADDED",
+    "player": {
+      "name": "Juwan Johnson",
+      "position": "TE"
+    }
+  },
+  {
+    "team": "Herbie Fully Loaded",
+    "action": "FA ADDED",
+    "player": {
+      "name": "Jason Sanders",
+      "position": "K"
+    }
+  },
+  {
+    "team": "Vato Hitch",
+    "action": "FA ADDED",
+    "player": {
+      "name": "Nick Folk",
+      "position": "K"
+    }
+  },
+  {
+    "team": "SCHLOPS",
+    "action": "DROPPED",
+    "player": {
+      "name": "Evan McPherson",
+      "position": "K"
+    }
+  },
+  {
+    "team": "Herbie Fully Loaded",
+    "action": "FA ADDED",
+    "player": {
+      "name": "Jason Myers",
+      "position": "K"
+    }
+  },
+  {
+    "team": "Biden Death Squad",
+    "action": "DROPPED",
+    "player": {
+      "name": "Giants D/ST",
+      "position": "D/ST"
+    }
+  },
+  {
+    "team": "The Stroud Boyz",
+    "action": "DROPPED",
+    "player": {
+      "name": "Alexander Mattison",
+      "position": "RB"
+    }
+  },
+  {
+    "team": "Herbie Fully Loaded",
+    "action": "DROPPED",
+    "player": {
+      "name": "Odell Beckham Jr.",
+      "position": "WR"
+    }
+  },
+  {
+    "team": "Autopilot",
+    "action": "WAIVER ADDED",
+    "player": {
+      "name": "Jordan Love",
+      "position": "QB"
+    }
+  },
+  {
+    "team": "ANTIFA",
+    "action": "WAIVER ADDED",
+    "player": {
+      "name": "Buccaneers D/ST",
+      "position": "D/ST"
+    }
+  },
+  {
+    "team": "Colorado Clusterfks",
+    "action": "WAIVER ADDED",
+    "player": {
+      "name": "Falcons D/ST",
+      "position": "D/ST"
+    }
+  },
+  {
+    "team": "The Stroud Boyz",
+    "action": "WAIVER ADDED",
+    "player": {
+      "name": "Pat Freiermuth",
+      "position": "TE"
+    }
+  },
+  {
+    "team": "Biden Death Squad",
+    "action": "WAIVER ADDED",
+    "player": {
+      "name": "Zack Moss",
+      "position": "RB"
+    }
+  },
+  {
+    "team": "Get Rich or Die Brian",
+    "action": "DROPPED",
+    "player": {
+      "name": "Vikings D/ST",
+      "position": "D/ST"
+    }
+  },
+  {
+    "team": "Autopilot",
+    "action": "DROPPED",
+    "player": {
+      "name": "Joshua Dobbs",
+      "position": "QB"
+    }
+  },
+  {
+    "team": "Herbie Fully Loaded",
+    "action": "FA ADDED",
+    "player": {
+      "name": "Saints D/ST",
+      "position": "D/ST"
+    }
+  },
+  {
+    "team": "Herbie Fully Loaded",
+    "action": "DROPPED",
+    "player": {
+      "name": "Mark Andrews",
+      "position": "TE"
+    }
+  },
+  {
+    "team": "Biden Death Squad",
+    "action": "FA ADDED",
+    "player": {
+      "name": "Jeff Wilson Jr.",
+      "position": "RB"
+    }
+  },
+  {
+    "team": "The Stroud Boyz",
+    "action": "DROPPED",
+    "player": {
+      "name": "Bills D/ST",
+      "position": "D/ST"
+    }
+  }
+]
