@@ -32,6 +32,27 @@ def serialize_activity(activity):
         }
     }
 
+def get_recent_activity(league):
+    # Get recent activity
+    activity = league.recent_activity()
+
+    # Serialize and sort activity by team name
+    json_activity = [serialize_activity(act) for act in activity]
+    sorted_activity = sorted(json_activity, key=lambda x: x["team"])
+
+    # Print or write the sorted activity
+    print(json.dumps(sorted_activity, indent=2))
+
+    # Write sorted activity to a file
+    file_path = "recent_activity_sorted.json"
+    with open(file_path, "w") as file:
+        json.dump(sorted_activity, file, indent=2)
+
+    print(f"Sorted activity has been written to '{file_path}'")
+
+    # Iterate through the sorted activity and send Venmo requests
+    # for entry in sorted_activity:
+    #     team_name = entry["team"]
 
 def main():
     # Read authentication credentials
@@ -53,28 +74,8 @@ def main():
         swid=swid_val
     )
 
-    # Now you can use the 'league' object for further processing
-    # For example, print league details
-    # print(f"League ID: {l_id}")
-    # print(f"League Year: {league_year}")
-    # print(f"Number of Teams: {len(league.teams)}")
-    
-    activity = league.recent_activity()
-    activity_len = len(activity)
-    json_activity = [serialize_activity(act) for act in activity]
-    sorted_activity = sorted(json_activity, key=lambda x: x["team"])
-    # activity_json = json.dumps(activity, indent=2)
-    # print(f"Recent Activity: {activity_json}")
-    # print(activity.type())
-    file_path = "recent_activity_sorted.json"
-    with open(file_path, "w") as file:
-        json.dump(sorted_activity, file, indent=2)
-
-    print(f"Sorted activity has been written to '{file_path}'")
-
-    # Iterate through the sorted activity and send Venmo requests
-    # for entry in sorted_activity:
-    #     team_name = entry["team"]
+    # Call the get_recent_activity function
+    get_recent_activity(league)
 
 if __name__ == "__main__":
     main()
